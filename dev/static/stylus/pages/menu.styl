@@ -21,6 +21,18 @@
       align-items flex-end
       margin-bottom 18px
 
+      &_wide
+
+        .menu__item
+          width 580px
+          margin-right 30px
+
+          &:nth-child(even)
+           margin-right 0
+
+          &:nth-child(4n)
+           margin-right auto
+
     &__item
       width 275px
       margin-right 30px
@@ -28,6 +40,8 @@
 
       &:nth-child(4n)
         margin-right 0
+
+
 
 
 
@@ -48,3 +62,25 @@
       background-position center center
       background-repeat no-repeat
       background-size cover
+
+      &_wide
+        width 580px
+
+    &__description
+      display flex
+      flex-direction row
+      align-items center
+      justify-content space-between
+
+    &__text
+      width 275px
+      font-size 22px
+      line-height 26px
+      color violet_dark
+      @extend .triviaslabmedium
+
+      ul
+        padding-left 17px
+
+      li
+        list-style-type disc
