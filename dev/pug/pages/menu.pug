@@ -1,0 +1,276 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Меню'
+    - var pageClass = 'menu-page'
+
+block content
+    .container
+        .menu
+            .menu__title
+                h2.like-h2 Меню
+            .menu__subtitle
+                h3.like-h3 Супы
+            .menu__list
+                .menu__item.product
+                    .product__name
+                        span
+                            | Борщ
+                            br
+                            | из свежей капусты
+                    .product__image(style='background-image: url("static/img/content/products/1.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Солянка
+                            br
+                            | по-домашнему
+                    .product__image(style='background-image: url("static/img/content/products/2.jpg")')
+                .menu__item.product
+                    .product__name
+                        span Суп гороховый с копчёностями
+                    .product__image(style='background-image: url("static/img/content/products/3.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Щи
+                            br
+                            | из свежей капусты
+                    .product__image(style='background-image: url("static/img/content/products/4.jpg")')
+            .menu__subtitle
+                h3.like-h3 Горячее
+            .menu__list
+                .menu__item.product
+                    .product__name
+                        span
+                            | Горбуша запечённая
+                            br
+                            | в пергаменте
+                    .product__image(style='background-image: url("static/img/content/products/5.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Рыба запечённая
+                            br
+                            | по-соломбальски
+                    .product__image(style='background-image: url("static/img/content/products/6.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Рыба
+                            br
+                            | с овощами
+                    .product__image(style='background-image: url("static/img/content/products/7.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Стейк из свинины
+                            br
+                            | с брусничным морсом
+                    .product__image(style='background-image: url("static/img/content/products/8.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Треска
+                            br
+                            | с оливками
+                    .product__image(style='background-image: url("static/img/content/products/9.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Филе куриное запечённое
+                            br
+                            | с овощами в пергаменте
+                    .product__image(style='background-image: url("static/img/content/products/10.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Язык маринованный
+                            br
+                            | с овощами
+                    .product__image(style='background-image: url("static/img/content/products/11.jpg")')
+            .menu__subtitle
+                h3.like-h3 Салаты и закуски
+            .menu__list
+                .menu__item.product
+                    .product__name
+                        span
+                            | Ассорти
+                            br
+                            | овощное
+                    .product__image(style='background-image: url("static/img/content/products/12.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Винегрет
+                            br
+                            | овощной
+                    .product__image(style='background-image: url("static/img/content/products/13.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Заливное с ветчиной
+                            br
+                            | и курой
+                    .product__image(style='background-image: url("static/img/content/products/14.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Кальмары
+                            br
+                            | со свежим огурцом
+                    .product__image(style='background-image: url("static/img/content/products/15.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Рулетики
+                            br
+                            | баклажанные
+                    .product__image(style='background-image: url("static/img/content/products/16.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Рулетики
+                            br
+                            | ветчинные
+                    .product__image(style='background-image: url("static/img/content/products/17.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Рулетики
+                            br
+                            | из кабачков
+                    .product__image(style='background-image: url("static/img/content/products/18.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат
+                            br
+                            | греческий
+                    .product__image(style='background-image: url("static/img/content/products/19.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат из капусты
+                            br
+                            | со свежим огурцом
+                    .product__image(style='background-image: url("static/img/content/products/20.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат из моркови
+                            br
+                            | с сахаром и сметаной
+                    .product__image(style='background-image: url("static/img/content/products/21.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат из моркови
+                            br
+                            | с ветчиной и сыром
+                    .product__image(style='background-image: url("static/img/content/products/22.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат из свежих овощей
+                            br
+                            | со сметаной или маслом
+                    .product__image(style='background-image: url("static/img/content/products/23.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат из фунчозы
+                            br
+                            | по-корейски
+                    .product__image(style='background-image: url("static/img/content/products/24.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат
+                            br
+                            | Каприз
+                    .product__image(style='background-image: url("static/img/content/products/25.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат
+                            br
+                            | Летнее настроение
+                    .product__image(style='background-image: url("static/img/content/products/26.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат
+                            br
+                            | Мимоза
+                    .product__image(style='background-image: url("static/img/content/products/27.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат
+                            br
+                            | Ницца
+                    .product__image(style='background-image: url("static/img/content/products/28.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат
+                            br
+                            | Оливье
+                    .product__image(style='background-image: url("static/img/content/products/29.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат
+                            br
+                            | с опятами
+                    .product__image(style='background-image: url("static/img/content/products/30.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат
+                            br
+                            | Столичный
+                    .product__image(style='background-image: url("static/img/content/products/31.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Салат Цезарь
+                            br
+                            | с курой
+                    .product__image(style='background-image: url("static/img/content/products/32.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Свёкла с сыром
+                            br
+                            | и майонезом
+                    .product__image(style='background-image: url("static/img/content/products/33.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Селёдочка
+                            br
+                            | с картофелем
+                    .product__image(style='background-image: url("static/img/content/products/34.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Селёдочка
+                            br
+                            | с картофелем
+                    .product__image(style='background-image: url("static/img/content/products/35.jpg")')
+                .menu__item.product
+                    .product__name
+                        span Соленья
+                    .product__image(style='background-image: url("static/img/content/products/36.jpg")')
+                .menu__item.product
+                    .product__name
+                        span
+                            | Яйцо под майонезом
+                            br
+                            | с гарниром
+                    .product__image(style='background-image: url("static/img/content/products/37.jpg")')
+            .menu__subtitle
+                h3.like-h3 Выпечка
+
