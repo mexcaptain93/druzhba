@@ -1,0 +1,61 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+	.container
+		.main
+			.main__banner
+				a(href='#')
+					img(src='static/img/content/banner-1.jpg' alt='Новый год')
+			.main__suggestions.suggestions
+				.suggestions__heading
+						h2.like-h2 Наши лучшие предложения
+				.suggestions__list
+					.suggestions__item
+						.suggestions__name
+							span
+								| Цезарь
+								br
+								| с&nbsp;курой
+						.suggestions__photo(style='background-image: url("static/img/content/suggestion-1.jpg")')
+						.suggestions__btn
+							a(href='#') Хочу!
+					.suggestions__item
+						.suggestions__name
+							span Каприз
+						.suggestions__photo(style='background-image: url("static/img/content/suggestion-2.jpg")')
+						.suggestions__btn
+							a(href='#') Хочу!
+					.suggestions__item
+						.suggestions__name
+							span Стейк из&nbsp;свинины с&nbsp;брусничным соусом
+						.suggestions__photo(style='background-image: url("static/img/content/suggestion-3.jpg")')
+						.suggestions__btn
+							a(href='#') Хочу!
+			.main__places
+				.main__about.about
+					.about__text.text
+						.text__heading
+							span.like-h3 О нас:
+						.text__data
+							p Фабрика вкусной еды—место в центре Архангельска, где всегда тепло, уютно и вкусно кормят. Мы находимся на пересечении улицы Комсомольской и проспекта Обводный канал
+							p Работая над каждой деталью нашего кафе «Фабрика вкусной еды», мы постарались сделать так, чтобы вам у нас понравилось. «Фабрика вкусной еды»—это современная русская и европейская кухня. Используя в своей работе только натуральные продукты, наши повара безукоризненно воплощают классическую рецептуру языком современных гастрономических технологий. Попробуйте, у нас действительно вкусно, а цены и обслуживание вас приятно удивят!
+							p Проведем вместе ваши мероприятия, семейные праздники и знаменательные даты. мы готовы вам помочь с оформлением, составлением меню и подарим вам необходимый заряд!
+							p Индивидуальный подход к каждому гостю!
+					.about__images.images
+						.images__list
+							.images__item(style='background-image: url("static/img/content/banner-2.jpg")')
+							.images__item(style='background-image: url("static/img/content/banner-3.jpg")')
+							.images__item(style='background-image: url("static/img/content/banner-4.jpg")')
+
+				.main__banners.banners
+					.banners__list
+						.banners__item
+							img(src='static/img/content/banner-6.png' alt='')
+						.banners__item
+							img(src='static/img/content/banner-5.png' alt='')
+
+

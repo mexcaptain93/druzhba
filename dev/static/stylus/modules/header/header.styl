@@ -1,0 +1,95 @@
+.header
+  padding-bottom 190px
+  background-image url('../img/general/bg_head.png')
+  background-repeat no-repeat
+  background-position 25px 15px
+
+
+
+
+  &__top
+    display flex
+    flex-direction row
+    align-items center
+    padding-top 30px
+    padding-bottom 40px
+
+  .top
+
+    &__item
+      width 33.3%
+      text-align center
+
+  &__phone
+    margin-top 39px
+    margin-left -22px
+
+  &__menu
+    margin-bottom 13px
+
+  .menu
+
+    &__list
+      display flex
+      flex-direction row
+      justify-content space-between
+
+    &__item
+      text-transform uppercase
+      @extend .triviaslabmedium
+      font-size 35px
+      letter-spacing 1.8px
+
+      &_active
+        text-shadow white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
+        position relative
+
+        &::after
+          content ''
+          position absolute
+          background-color yellow
+          height 27px
+          left -1px
+          right -5px
+          z-index -1
+          bottom 0
+
+
+  &__submenu
+
+  .submenu
+    border-top 1px dotted violet_dark
+    border-bottom 1px dotted violet_dark
+    padding-top 2px
+    padding-bottom 3px
+
+    &__list
+      display flex
+      flex-direction row
+      justify-content space-between
+      margin-left -3px
+
+    &__item
+      text-transform uppercase
+      @extend .triviaslablight
+      font-size 21px
+      color yellow
+
+      &:last-child
+
+        &::after
+          content none
+
+
+      &::after
+        content: ''
+        width 1px
+        height 19px
+        background yellow
+        display inline-block
+        position relative
+        left 13px
+        top 6px
+
+
+
