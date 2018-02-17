@@ -1,0 +1,41 @@
+.reviews-page
+
+  .reviews
+    padding-top 30px
+    margin-bottom -8px
+
+    &__title
+      text-align center
+      margin-bottom 20px
+
+    &__item
+      display flex
+      flex-direction row
+      margin-bottom 15px
+
+      &:last-child
+        margin-bottom 0
+
+  .review
+
+    &__photo
+      width 137px
+      height 137px
+      border-radius 50%
+      background-size cover
+      background-repeat no-repeat
+      background-position center center
+      border 10px solid yellow
+      margin-right 20px
+
+    &__name
+      text-transform none
+      @extend .like-h3
+      line-height 34px
+      margin-bottom 5px
+
+    &__text
+
+      p
+        line-height 20px
+        margin-bottom 7px !important
