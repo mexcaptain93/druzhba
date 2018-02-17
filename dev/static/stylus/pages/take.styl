@@ -1,0 +1,81 @@
+.take-page
+
+  .take
+    padding-top 30px
+    margin-bottom 20px
+
+    &__title
+      text-align center
+      margin-bottom 16px
+
+    &__text
+      margin-bottom 15px
+
+      p
+        letter-spacing -0.1px
+
+    &__item
+      margin-bottom 50px
+
+      &:last-child
+        margin-bottom 0
+
+        .place
+
+          &__name
+            margin-top -7px
+            padding-top 0
+            padding-left 18px
+            margin-bottom -3px
+
+          &__address
+            padding-left 18px
+            margin-bottom 12px
+
+            ul
+              padding-left 23px
+              font-size 29px
+
+              li
+               margin-bottom 4px
+
+
+  .place
+
+    &__top
+      display flex
+      flex-direction row
+      margin-bottom 18px
+
+    &__text
+      width 1000px
+
+    &__name
+      @extend .like-h3
+      color yellow
+      text-transform none
+      padding-top 12px
+      padding-left 10px
+
+    &__address
+      @extend .like-h3
+      text-transform none
+      white-space nowrap
+
+      ul
+        padding-left 42px
+
+        li
+
+          list-style-type disc
+
+    &__photos
+      display flex
+      flex-direction row
+      justify-content space-between
+
+  .photos
+
+    &__item
+      height 286px
+      width 376px

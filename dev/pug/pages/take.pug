@@ -1,0 +1,72 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Возьми с собой'
+	- var pageClass = 'take-page'
+
+block content
+	.container
+		.take
+			.take__title
+				h2.like-h2 Возьми с собой
+			.take__text
+				p Вкусно пообедать или взять готовую еду Вы сможете и в других наших заведениях. Ждём Вас в гости!
+			.take__list
+				.take__item.place
+					.place__top
+						.place__logo
+							img(src='static/img/content/take/1.jpg' alt='Щи-борщи')
+						.place__text
+							.place__name
+								span
+									| Столовая домашней кухни
+									br
+									|«ЩИ-БОРЩИ»
+							.place__address
+								ul
+									li ул. КОМСОМОЛЬСКАЯ, 59
+					.place__photos.photos
+						.photos__item(style='background-image: url("static/img/content/take/2.jpg")')
+						.photos__item(style='background-image: url("static/img/content/take/3.jpg")')
+						.photos__item(style='background-image: url("static/img/content/take/4.jpg")')
+				.take__item.place
+					.place__top
+						.place__logo
+							img(src='static/img/content/take/5.jpg' alt='Поешь-ка')
+						.place__text
+							.place__name
+								span
+									| СЕТЬ ФИРМЕННЫХ КУЛИНАРИЙ
+									br
+									| «ПОЕШЬ-КА»
+							.place__address
+								span.like-h3 Адреса
+								ul
+									li УЛ. КОМСОМОЛЬСКАЯ, 59 (С ТОРЦА «ДРУЖБЫ»)
+									li
+										| УЛ. ВОСКРЕСЕНСКАЯ, 101
+										br
+										| (ПЕРЕКРЕСТОК ТИММЕ-ВОСКРЕСЕНСКАЯ)
+									li
+										| ПР. ТРОИЦКИЙ, 168 А
+										br
+										| (У АРХАНГЕЛЬСКГЕОЛДОБЫЧИ)
+									li УЛ. ПАРТИЗАНСКАЯ, 12/1
+									li
+										| УЛ. ГАГАРИНА, 1/1
+										br
+										| (ПРЕДМОСТНАЯ ПЛОЩАДЬ)
+							.place__name
+								span СТОЛОВАЯ «ПОЕШЬ-КА!»
+							.place__address
+								span.like-h3 Адреса
+								ul
+									li УЛ. ГАГАРИНА, 1/1
+					.place__photos.photos
+						.photos__item(style='background-image: url("static/img/content/take/6.jpg")')
+						.photos__item(style='background-image: url("static/img/content/take/7.jpg")')
+						.photos__item(style='background-image: url("static/img/content/take/8.jpg")')
+
+
+
+
