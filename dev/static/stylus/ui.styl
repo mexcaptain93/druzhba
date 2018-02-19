@@ -39,5 +39,58 @@ p
   background-color: #f9b233;
   @extend .triviaslabmedium
 
+.popup
+  display none
+  background alpha(black, .5)
+  text-align center
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  z-index 1000
+
+  &__content
+    background white
+    display inline-block
+    padding 40px
+    border 1px violet_dark dotted
+    border-radius 10px
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+
+    & > .like-h3
+      margin-bottom 30px
+
+  &__list
+    display flex
+    flex-direction row
+    align-items flex-end
+
+  &__item
+    margin-right 20px
+
+    &:last-child
+      margin-right 0
+
+    span
+      display block
+      text-align left
+      @extend .triviaslabmedium
+      font-size 24px
+      line-height 36px
+
+.input
+  font-size 18px
+  line-height 24px
+  border 1px violet_dark dotted
+  border-radius 10px
+  padding 0 10px
 
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
