@@ -12,19 +12,19 @@ header.header
             .top__item
         .header__links.links
             .links__list
-             .links__item.links__item_active
+             .links__item(class= pageClass === "menu-page" ? "links__item_active" : "")
                  a(href='menu.html')
                     span Меню
-             .links__item
+             .links__item(class= pageClass === "bankets-page" ? "links__item_active" : "")
                  a(href='bankets.html')
                     span Банкеты
-             .links__item
+             .links__item(class= pageClass === "catering-page" ? "links__item_active" : "")
                  a(href='catering.html')
                     span Кейтеринг
-             .links__item
+             .links__item(class= pageClass === "take-page" ? "links__item_active" : "")
                  a(href='take.html')
                     span Возьми с собой
-             .links__item
+             .links__item(class= pageClass === "reviews-page" ? "links__item_active" : "")
                  a(href='reviews.html')
                     span Отзывы
         .header__sublinks.sublinks
